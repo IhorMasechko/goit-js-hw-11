@@ -17,6 +17,6 @@ A simple website to search images on Pixabay
 
 ## [<img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/collections/github-pages-examples/github-pages-examples.png" width="80px" alt="home page" border="0">](https://pawelpalasinski.github.io/goit-js-hw-11/)
 
-<img src="https://ibb.co/PWGQkwX" alt="pixabay-js" border="0">
+<img src="https://ihormasechko.imgbb.com/" alt="pixabay-js" border="0">
 
 </div>
