@@ -2,6 +2,7 @@ import { fetchImages } from '../js/fetchImages';
 import Notiflix from 'notiflix';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
+import { scrollBy } from './scrollFunction';
 
 const input = document.querySelector('input[name="searchQuery"]');
 const searchForm = document.querySelector('.search-form');
@@ -74,6 +75,7 @@ async function onClickLoadMoreBtn() {
       renderImageList(response.hits);
       btnLoadMore.style.display = 'block';
       gallerySimpleLightbox.refresh();
+      scrollBy();
     }
   } catch (error) {
     console.log(error);
