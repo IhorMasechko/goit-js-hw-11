@@ -30,7 +30,7 @@ async function onSubmitSearchForm(e) {
         Notiflix.Notify.failure(
           'Sorry, there are no images matching your search query. Please try again.'
         );
-      } else if (response.hits.length > 0 && response.hits.length < 40) {
+      } else if (response.hits.length > 0 && response.hits.length < 30) {
         renderImageList(response.hits);
         Notiflix.Notify.success(
           `Hooray! We found ${response.totalHits} images.`
@@ -64,7 +64,7 @@ async function onClickLoadMoreBtn() {
       Notiflix.Notify.failure(
         'Sorry, there are no images matching your search query. Please try again.'
       );
-    } else if (response.hits.length < 40) {
+    } else if (response.hits.length < 30) {
       renderImageList(response.hits);
       btnLoadMore.style.display = 'none';
       gallerySimpleLightbox.refresh();
